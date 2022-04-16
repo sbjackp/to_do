@@ -1,0 +1,42 @@
+<!-- TODOアプリ
+1.フォームを入力
+（フロントエンド側の未入力、文字数等のバリデーションも実装)
+2.登録ボタンを押す→非同期POST通信でDB接続
+3.フォームの内容をDBへ保存
+（バックエンド側の未入力、文字数等のバリデーションも実装)
+4.DBに保存されたデータを非同期GET通信で取得
+5.取得したデータをフロントエンド側に表示
+6.完了ボタンの追加
+7.完了ボタンを押す→非同期POST通信でDB接続
+8.タスクが完了なら1、未完了なら0をDBに保存
+9.タスクの完了状況を非同期GET通信で取得
+10.完了してる場合タスクに横線の追加
+（未完了の場合は横線削除）
+11.削除ボタンの追加
+12.削除ボタンを押す→非同期POST通信でDB接続
+13.選択したデータの削除 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="to_do.css">
+</head>
+<body>
+    <h1>TODOリスト</h1>
+    <div id="error"></div>
+    <form id="task">
+        <input id="list" type="text" name="list">
+        <button id="btn">登録</button>
+    </form>
+    <ul id="task_list"></ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="to_do.js" charset="utf-8">
+    </script>
+</body>
+</html>
